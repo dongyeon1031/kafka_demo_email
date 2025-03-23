@@ -1,4 +1,3 @@
-
 plugins {
     id 'java'
     id 'org.springframework.boot' version '3.4.3'
@@ -16,6 +15,10 @@ java {
 
 repositories {
     mavenCentral()
+}
+
+bootJar {
+    archiveFileName = 'email-service.jar'
 }
 
 dependencies {
